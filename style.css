@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #404040;
+}
+
+/* typography */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+}
+
+h1 + p {
+    font-size: 1.3125rem;
+    font-weight: 900;
+    color: #f18119;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+h2 + p {
+    font-weight: 900;
+    color: #f18119;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 1.5em;
+}
+
+.par-main {
+    color: #5A5A5A;
+}
+
+.top-text {
+    margin: 0 auto;
+    font-size: .625rem;
+    font-weight: 900;
+    color: #f18119;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    order: -1;
+    border-top: 7px solid #f18119;
+    border-image: linear-gradient(to right, #FFA51D, #FF713B) 1 ;
+    width: 170px;
+    padding-top: .5em;
+}
+
+.bottom-text {
+    font-size: .625rem;
+    letter-spacing: 1px;
+}
+
+strong {
+    font-weight: 900;
+}
+
+/* intro section */
+
+.intro-content {
+    background: #404040;
+    background-blend-mode: overlay;
+    background-image: url(/images/jon-tyson-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 .5em 2em;
+}
+
+/* main content */
+
+.main-content {
+    padding: 2em 1em;
+}
+
+.container {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.container-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+/* email section */
+
+.email-collector {
+    width: 70%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input,
+.btn-main {
+    width: 100%;
+    text-align: center;
+    letter-spacing: .7px;
+    border-radius: 5px;
+    margin: .5em 0;
+    outline: none;
+}
+
+input {
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid #404040;
+    padding: .75em;
+}
+
+.btn {
+    font-size: .65rem;
+    font-weight: 900;
+    padding: 1.3em;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-main {
+    background-image: linear-gradient(to right, #FFA51D, #FF713B);
+    color: #fff;
+}
+
+.btn-main:hover,
+.btn-main:focus {
+    background: #404040;
+    color: #FFA51D;
+}
+
+/* media query */
+
+@media (min-width: 500px) {
+    
+    body {
+        font-size: 1.125rem;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+
+    .main-content,
+    .intro-content {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-intro {
+        height: 100%;
+    }
+
+}
